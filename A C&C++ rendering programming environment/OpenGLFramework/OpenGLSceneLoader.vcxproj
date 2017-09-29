@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3E642032-17AF-4F33-8146-2A08D33D570B}</ProjectGuid>
+    <RootNamespace>OpenGLSceneLoader</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>bin\obj\debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>bin\obj\optimized\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)OpenGLSceneLoader.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)OpenGLSceneLoader.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <BuildLog>
+      <Path>$(IntDir)BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)OpenGLSceneLoader.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(CG_LIB_PATH);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="glInterface.cpp" />
+    <ClCompile Include="sceneLoader.cpp" />
+    <ClCompile Include="Scene\Camera.cpp" />
+    <ClCompile Include="Scene\glLight.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\SceneRenderFuncs.cpp" />
+    <ClCompile Include="DataTypes\glTexture.cpp" />
+    <ClCompile Include="DataTypes\Matrix4x4.cpp" />
+    <ClCompile Include="DataTypes\RGBColor.cpp" />
+    <ClCompile Include="DataTypes\Vector.cpp" />
+    <ClCompile Include="Utils\drawTextToGLWindow.cpp" />
+    <ClCompile Include="Utils\framebufferObject.cpp" />
+    <ClCompile Include="Utils\frameGrab.cpp" />
+    <ClCompile Include="Utils\frameRate.cpp" />
+    <ClCompile Include="Utils\glslProgram.cpp" />
+    <ClCompile Include="Utils\searchPathList.cpp" />
+    <ClCompile Include="Utils\TextParsing.cpp" />
+    <ClCompile Include="Utils\Trackball.cpp" />
+    <ClCompile Include="Utils\ImageIO\bmp.cpp" />
+    <ClCompile Include="Utils\ImageIO\loadHDR.cpp" />
+    <ClCompile Include="Utils\ImageIO\ppm.cpp" />
+    <ClCompile Include="Utils\ImageIO\readrgb.cpp" />
+    <ClCompile Include="Utils\ImageIO\rgbe.cpp" />
+    <ClCompile Include="Utils\ModelIO\glm.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\edge.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\edgelist.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\face.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\facelist.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\halfedge.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\heapsort.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\input_hem.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\list.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\loop.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\obj_read.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\output_hem.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\solid.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\vertex.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\vertexlist.cpp" />
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\wrapper.cpp" />
+    <ClCompile Include="Interface\glKeyAndMouseCallbacks.cpp" />
+    <ClCompile Include="Interface\glTrackballInterface.cpp" />
+    <ClCompile Include="Interface\SceneFileDefinedInteraction.cpp" />
+    <ClCompile Include="Objects\Cylinder.cpp" />
+    <ClCompile Include="Objects\Group.cpp" />
+    <ClCompile Include="Objects\Mesh.cpp" />
+    <ClCompile Include="Objects\Object.cpp" />
+    <ClCompile Include="Objects\Quad.cpp" />
+    <ClCompile Include="Objects\Sphere.cpp" />
+    <ClCompile Include="Objects\Triangle.cpp" />
+    <ClCompile Include="Materials\GLConstantMaterial.cpp" />
+    <ClCompile Include="Materials\GLLambertianMaterial.cpp" />
+    <ClCompile Include="Materials\GLLambertianTexMaterial.cpp" />
+    <ClCompile Include="Materials\GLMaterial.cpp" />
+    <ClCompile Include="Materials\GLSLShaderMaterial.cpp" />
+    <ClCompile Include="RenderingTechniques\initializeRenderingData.cpp" />
+    <ClCompile Include="RenderingTechniques\utilRoutines.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sceneLoader.h" />
+    <ClInclude Include="Scene\Camera.h" />
+    <ClInclude Include="Scene\glLight.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="DataTypes\Array1D.h" />
+    <ClInclude Include="DataTypes\Color.h" />
+    <ClInclude Include="DataTypes\glTexture.h" />
+    <ClInclude Include="DataTypes\MathDefs.h" />
+    <ClInclude Include="DataTypes\Matrix4x4.h" />
+    <ClInclude Include="DataTypes\Point.h" />
+    <ClInclude Include="DataTypes\RGBAColor.h" />
+    <ClInclude Include="DataTypes\RGBColor.h" />
+    <ClInclude Include="DataTypes\SpectralColor.h" />
+    <ClInclude Include="DataTypes\Vector.h" />
+    <ClInclude Include="DataTypes\XYZSpectrum.h" />
+    <ClInclude Include="Utils\drawTextToGLWindow.h" />
+    <ClInclude Include="Utils\framebufferObject.h" />
+    <ClInclude Include="Utils\frameGrab.h" />
+    <ClInclude Include="Utils\frameRate.h" />
+    <ClInclude Include="Utils\glslProgram.h" />
+    <ClInclude Include="Utils\HighResolutionTimer.h" />
+    <ClInclude Include="Utils\ProgramPathLists.h" />
+    <ClInclude Include="Utils\searchPathList.h" />
+    <ClInclude Include="Utils\TextParsing.h" />
+    <ClInclude Include="Utils\Trackball.h" />
+    <ClInclude Include="Utils\ImageIO\bmp.h" />
+    <ClInclude Include="Utils\ImageIO\imageIO.h" />
+    <ClInclude Include="Utils\ImageIO\ppm.h" />
+    <ClInclude Include="Utils\ImageIO\rgbe.h" />
+    <ClInclude Include="Utils\ModelIO\glm.h" />
+    <ClInclude Include="Utils\ModelIO\SimpleModelLib.h" />
+    <ClInclude Include="Interface\SceneFileDefinedInteraction.h" />
+    <ClInclude Include="Objects\Cylinder.h" />
+    <ClInclude Include="Objects\Group.h" />
+    <ClInclude Include="Objects\Mesh.h" />
+    <ClInclude Include="Objects\Object.h" />
+    <ClInclude Include="Objects\Quad.h" />
+    <ClInclude Include="Objects\Sphere.h" />
+    <ClInclude Include="Objects\Triangle.h" />
+    <ClInclude Include="Materials\GLConstantMaterial.h" />
+    <ClInclude Include="Materials\GLLambertianMaterial.h" />
+    <ClInclude Include="Materials\GLLambertianTexMaterial.h" />
+    <ClInclude Include="Materials\GLMaterial.h" />
+    <ClInclude Include="Materials\GLSLShaderMaterial.h" />
+    <ClInclude Include="Materials\Material.h" />
+    <ClInclude Include="RenderingTechniques\renderingData.h" />
+    <ClInclude Include="RenderingTechniques\renderingMethods.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\shaders\normalSurfaceShaders\phongObjectShader.frag.glsl" />
+    <None Include="bin\shaders\normalSurfaceShaders\phongObjectShader.vert.glsl" />
+    <None Include="bin\shaders\normalSurfaceShaders\texturedWallShader.frag.glsl" />
+    <None Include="bin\shaders\normalSurfaceShaders\texturedWallShader.vert.glsl" />
+    <None Include="VTune\OpenGLSceneLoader.vpj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="bin\scenes\cbox_meters.txt" />
+    <Text Include="bin\scenes\sponzaModel.txt" />
+    <Text Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

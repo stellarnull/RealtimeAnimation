@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{6fcecac7-6522-49e6-8fe3-a5821ee2b653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataTypes">
+      <UniqueIdentifier>{b4ba17c4-5d3a-4834-a5b8-999c8d3551bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{7a64cf59-4672-4e8c-8ce9-74205c0975be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\ImageIO">
+      <UniqueIdentifier>{19fd2302-9b9c-44a3-984d-25d4d51bf335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\ModelIO">
+      <UniqueIdentifier>{6c1963fa-47fe-4fa8-af40-8d39ee77c7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils\ModelIO\SimpleModelLib">
+      <UniqueIdentifier>{30bf6174-c6a2-4062-acf8-6be141e776a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interface">
+      <UniqueIdentifier>{3cb79ced-f72d-42ae-91e2-588b0705b4f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objects">
+      <UniqueIdentifier>{4fb0c853-53af-4b28-aa84-5f0050eadd42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Materials">
+      <UniqueIdentifier>{9b4c7e3a-b430-4b25-9715-93112ad3a47b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RenderingTechniques">
+      <UniqueIdentifier>{f184d605-258f-4032-9730-e4927b4751af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{080ee95e-59b0-4f18-954c-0b948a61e05c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DataTypes">
+      <UniqueIdentifier>{40ed7a12-9f31-49c4-a98f-99dcbd805536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{1a7308fa-f0d1-40c8-99ee-0eee6d821c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils\ImageIO">
+      <UniqueIdentifier>{2bccf1a6-0010-415f-8d0f-2c92c745e2db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils\ModelIO">
+      <UniqueIdentifier>{5cf62aa0-1170-4206-8365-048a9c9d41b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface">
+      <UniqueIdentifier>{c5c605ec-983e-4ee1-ad3f-87df3c2a5a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objects">
+      <UniqueIdentifier>{55dc7423-4159-446b-89b4-47335dbfde27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Materials">
+      <UniqueIdentifier>{df0da162-a189-48b0-be7b-f739f4d83de6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RenderingTechniques">
+      <UniqueIdentifier>{e172f5d9-851c-4e77-8864-6087216f7e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{20ce04da-b873-4e78-93d5-d2c1c7d8fdc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\normalSurfaceShaders">
+      <UniqueIdentifier>{4455f79f-0854-49c7-af88-026e37df0425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{9297da34-2c36-4852-b7ee-f45fb5c29136}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Camera.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\glLight.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneRenderFuncs.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTypes\glTexture.cpp">
+      <Filter>Source Files\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTypes\Matrix4x4.cpp">
+      <Filter>Source Files\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTypes\RGBColor.cpp">
+      <Filter>Source Files\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTypes\Vector.cpp">
+      <Filter>Source Files\DataTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\drawTextToGLWindow.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\framebufferObject.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\frameGrab.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\frameRate.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\glslProgram.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\searchPathList.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\TextParsing.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Trackball.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ImageIO\bmp.cpp">
+      <Filter>Source Files\Utils\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ImageIO\loadHDR.cpp">
+      <Filter>Source Files\Utils\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ImageIO\ppm.cpp">
+      <Filter>Source Files\Utils\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ImageIO\readrgb.cpp">
+      <Filter>Source Files\Utils\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ImageIO\rgbe.cpp">
+      <Filter>Source Files\Utils\ImageIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\glm.cpp">
+      <Filter>Source Files\Utils\ModelIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\edge.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\edgelist.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\face.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\facelist.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\halfedge.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\heapsort.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\input_hem.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\list.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\loop.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\obj_read.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\output_hem.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\solid.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\vertex.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\vertexlist.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ModelIO\simpleModelLib\wrapper.cpp">
+      <Filter>Source Files\Utils\ModelIO\SimpleModelLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\glKeyAndMouseCallbacks.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\glTrackballInterface.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\SceneFileDefinedInteraction.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Cylinder.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Group.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Mesh.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Object.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Quad.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Sphere.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\Triangle.cpp">
+      <Filter>Source Files\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\GLConstantMaterial.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\GLLambertianMaterial.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\GLLambertianTexMaterial.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\GLMaterial.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="Materials\GLSLShaderMaterial.cpp">
+      <Filter>Source Files\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingTechniques\initializeRenderingData.cpp">
+      <Filter>Source Files\RenderingTechniques</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingTechniques\utilRoutines.cpp">
+      <Filter>Source Files\RenderingTechniques</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sceneLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Camera.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\glLight.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\Array1D.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\Color.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\glTexture.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\MathDefs.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\Matrix4x4.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\Point.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\RGBAColor.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\RGBColor.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\SpectralColor.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\Vector.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes\XYZSpectrum.h">
+      <Filter>Header Files\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\drawTextToGLWindow.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\framebufferObject.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\frameGrab.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\frameRate.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\glslProgram.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\HighResolutionTimer.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ProgramPathLists.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\searchPathList.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\TextParsing.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Trackball.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ImageIO\bmp.h">
+      <Filter>Header Files\Utils\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ImageIO\imageIO.h">
+      <Filter>Header Files\Utils\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ImageIO\ppm.h">
+      <Filter>Header Files\Utils\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ImageIO\rgbe.h">
+      <Filter>Header Files\Utils\ImageIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ModelIO\glm.h">
+      <Filter>Header Files\Utils\ModelIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ModelIO\SimpleModelLib.h">
+      <Filter>Header Files\Utils\ModelIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\SceneFileDefinedInteraction.h">
+      <Filter>Header Files\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Cylinder.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Group.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Mesh.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Object.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Quad.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Sphere.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\Triangle.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\GLConstantMaterial.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\GLLambertianMaterial.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\GLLambertianTexMaterial.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\GLMaterial.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\GLSLShaderMaterial.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials\Material.h">
+      <Filter>Header Files\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingTechniques\renderingData.h">
+      <Filter>Header Files\RenderingTechniques</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingTechniques\renderingMethods.h">
+      <Filter>Header Files\RenderingTechniques</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\shaders\normalSurfaceShaders\phongObjectShader.frag.glsl">
+      <Filter>Shaders\normalSurfaceShaders</Filter>
+    </None>
+    <None Include="bin\shaders\normalSurfaceShaders\phongObjectShader.vert.glsl">
+      <Filter>Shaders\normalSurfaceShaders</Filter>
+    </None>
+    <None Include="bin\shaders\normalSurfaceShaders\texturedWallShader.frag.glsl">
+      <Filter>Shaders\normalSurfaceShaders</Filter>
+    </None>
+    <None Include="bin\shaders\normalSurfaceShaders\texturedWallShader.vert.glsl">
+      <Filter>Shaders\normalSurfaceShaders</Filter>
+    </None>
+    <None Include="VTune\OpenGLSceneLoader.vpj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="bin\scenes\cbox_meters.txt">
+      <Filter>Scenes</Filter>
+    </Text>
+    <Text Include="bin\scenes\sponzaModel.txt">
+      <Filter>Scenes</Filter>
+    </Text>
+    <Text Include="README.txt" />
+  </ItemGroup>
+</Project>

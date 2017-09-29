@@ -1,0 +1,101 @@
+﻿生成启动时间为 2017/1/17 19:23:48。
+     1>项目“F:\academic41\实时动画\final\final\A C&C++ rendering programming environment\OpenGLFramework\OpenGLSceneLoader.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         I:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"bin\obj\debug\\" /Fd"bin\obj\debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt glInterface.cpp sceneLoader.cpp Scene\Camera.cpp Scene\glLight.cpp Scene\Scene.cpp Scene\SceneRenderFuncs.cpp DataTypes\glTexture.cpp DataTypes\Matrix4x4.cpp DataTypes\RGBColor.cpp DataTypes\Vector.cpp Utils\drawTextToGLWindow.cpp Utils\framebufferObject.cpp Utils\frameGrab.cpp Utils\frameRate.cpp Utils\glslProgram.cpp Utils\searchPathList.cpp Utils\TextParsing.cpp Utils\Trackball.cpp Utils\ImageIO\bmp.cpp Utils\ImageIO\loadHDR.cpp Utils\ImageIO\ppm.cpp Utils\ImageIO\readrgb.cpp Utils\ImageIO\rgbe.cpp Utils\ModelIO\glm.cpp Utils\ModelIO\simpleModelLib\edge.cpp Utils\ModelIO\simpleModelLib\edgelist.cpp Utils\ModelIO\simpleModelLib\face.cpp Utils\ModelIO\simpleModelLib\facelist.cpp Utils\ModelIO\simpleModelLib\halfedge.cpp Utils\ModelIO\simpleModelLib\heapsort.cpp Utils\ModelIO\simpleModelLib\input_hem.cpp Utils\ModelIO\simpleModelLib\list.cpp Utils\ModelIO\simpleModelLib\loop.cpp Utils\ModelIO\simpleModelLib\obj_read.cpp Utils\ModelIO\simpleModelLib\output_hem.cpp Utils\ModelIO\simpleModelLib\solid.cpp Utils\ModelIO\simpleModelLib\vertex.cpp Utils\ModelIO\simpleModelLib\vertexlist.cpp Utils\ModelIO\simpleModelLib\wrapper.cpp Interface\glKeyAndMouseCallbacks.cpp Interface\glTrackballInterface.cpp Interface\SceneFileDefinedInteraction.cpp Objects\Cylinder.cpp Objects\Group.cpp Objects\Mesh.cpp Objects\Object.cpp Objects\Quad.cpp Objects\Sphere.cpp Objects\Triangle.cpp Materials\GLConstantMaterial.cpp Materials\GLLambertianMaterial.cpp Materials\GLLambertianTexMaterial.cpp Materials\GLMaterial.cpp Materials\GLSLShaderMaterial.cpp RenderingTechniques\initializeRenderingData.cpp RenderingTechniques\utilRoutines.cpp
+         utilRoutines.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         initializeRenderingData.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         GLSLShaderMaterial.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\trackball.h(6): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         GLMaterial.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\materials\glmaterial.h(4): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         GLLambertianTexMaterial.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\trackball.h(6): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         GLLambertianMaterial.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\trackball.h(6): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         GLConstantMaterial.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\trackball.h(6): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Triangle.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Sphere.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Quad.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Object.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\trackball.h(6): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Mesh.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\modelio\simplemodellib.h(4): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Group.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\trackball.h(6): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Cylinder.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         SceneFileDefinedInteraction.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\interface\scenefiledefinedinteraction.h(10): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         glTrackballInterface.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         glKeyAndMouseCallbacks.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         wrapper.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         vertexlist.cpp
+         vertex.cpp
+         正在生成代码...
+         正在编译...
+         solid.cpp
+         output_hem.cpp
+         obj_read.cpp
+         loop.cpp
+         list.cpp
+         input_hem.cpp
+         heapsort.cpp
+         halfedge.cpp
+         facelist.cpp
+         face.cpp
+         edgelist.cpp
+         edge.cpp
+         glm.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\modelio\glm.h(19): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         rgbe.cpp
+         readrgb.cpp
+         ppm.cpp
+         loadHDR.cpp
+         bmp.cpp
+         Trackball.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\trackball.h(6): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         TextParsing.cpp
+         正在生成代码...
+         正在编译...
+         searchPathList.cpp
+         glslProgram.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\glslprogram.h(40): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         frameRate.cpp
+         frameGrab.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         framebufferObject.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\framebufferobject.h(21): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         drawTextToGLWindow.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\drawtexttoglwindow.h(31): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Vector.cpp
+         RGBColor.cpp
+         Matrix4x4.cpp
+         glTexture.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\datatypes\gltexture.h(19): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         SceneRenderFuncs.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\datatypes\gltexture.h(19): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Scene.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\datatypes\gltexture.h(19): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         glLight.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         Camera.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\utils\trackball.h(6): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         sceneLoader.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         glInterface.cpp
+     1>f:\academic41\实时动画\final\final\a c&c++ rendering programming environment\openglframework\sceneloader.h(23): fatal error C1083: 无法打开包括文件:“GL/glew.h”: No such file or directory
+         正在生成代码...
+     1>已完成生成项目“F:\academic41\实时动画\final\final\A C&C++ rendering programming environment\OpenGLFramework\OpenGLSceneLoader.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:10.27
